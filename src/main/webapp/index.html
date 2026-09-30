@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Marcações do Salão</title>
+</head>
+<body>
+<h1>Marcar atendimento</h1>
+
+<form action="marcacoes" method="post">
+    <label>Nome do cliente:
+        <input type="text" name="nome" required>
+    </label><br><br>
+
+    <label>Telefone:
+        <input type="tel" name="telefone" required>
+    </label><br><br>
+
+    <label>Profissional:
+        <select name="profissionalId" required>
+            <option value="1">Ana — Cabeleireira</option>
+            <option value="2">Beatriz — Manicure</option>
+        </select>
+    </label><br><br>
+
+    <label>Serviço:
+        <select name="servicoId" required>
+            <option value="1">Tranças — 120 min — 800 MT</option>
+            <option value="2">Manicure — 60 min — 400 MT</option>
+        </select>
+    </label><br><br>
+
+    <label>Data e hora:
+        <input type="datetime-local" name="dataHora" required>
+    </label><br><br>
+
+    <label>Local:
+        <select name="tipoAtendimento">
+            <option value="SALAO">No salão</option>
+            <option value="DOMICILIO">Ao domicílio</option>
+        </select>
+    </label><br><br>
+
+    <button type="submit">Confirmar marcação</button>
+</form>
+</body>
+</html>
